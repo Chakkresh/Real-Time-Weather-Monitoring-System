@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs">
+    <sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE">
+        <name>longitude</name>
+        <order>100</order>
+        <rest_message_function display_value="Get Current Weather">2ba6a7f083449310ecf6f0d6feaad3f0</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-18 10:09:26</sys_created_on>
+        <sys_id>6717e7f083449310ecf6f0d6feaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>longitude</sys_name>
+        <sys_package display_value="Real-Time Weather Monitoring System" source="x_2132473_real_t_0">cac9d7b883c09310ecf6f0d6feaad3b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Real-Time Weather Monitoring System">cac9d7b883c09310ecf6f0d6feaad3b6</sys_scope>
+        <sys_update_name>sys_rest_message_fn_param_defs_6717e7f083449310ecf6f0d6feaad3c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-18 10:09:26</sys_updated_on>
+        <value>${longitude}</value>
+    </sys_rest_message_fn_param_defs>
+</record_update>

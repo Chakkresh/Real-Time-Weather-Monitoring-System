@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="6a8a133c83c09310ecf6f0d6feaad313" label="Weather Data" max_length="40" name="x_2132473_real_t_0_weather_data" type="collection">
+        <element label="Temperature in Celsius" max_length="38" name="temperature_in_celsius" type="decimal"/>
+        <element label="Region" max_length="40" name="region" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Latitude" max_length="38" name="latitude" type="decimal"/>
+        <element label="Longitude" max_length="38" name="longitude" type="decimal"/>
+        <element label="Location" mandatory="true" max_length="40" name="location" type="string"/>
+    </element>
+</database>

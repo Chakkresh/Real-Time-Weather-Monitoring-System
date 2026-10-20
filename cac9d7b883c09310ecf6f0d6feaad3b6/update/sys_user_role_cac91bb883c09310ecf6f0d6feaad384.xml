@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Default user role</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>cLjBrbOb18tXePBm+3CdIh9YVO7o48I6S68mo0DZWNk=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_2132473_real_t_0.user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-18 09:10:24</sys_created_on>
+        <sys_id>cac91bb883c09310ecf6f0d6feaad384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2132473_real_t_0.user</sys_name>
+        <sys_package display_value="Real-Time Weather Monitoring System" source="x_2132473_real_t_0">cac9d7b883c09310ecf6f0d6feaad3b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Real-Time Weather Monitoring System">cac9d7b883c09310ecf6f0d6feaad3b6</sys_scope>
+        <sys_update_name>sys_user_role_cac91bb883c09310ecf6f0d6feaad384</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-18 09:10:24</sys_updated_on>
+    </sys_user_role>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>region</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-19 11:32:55</sys_created_on>
+        <sys_id>d5f38959830c1710ecf6f0d6feaad32e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>region</sys_name>
+        <sys_package display_value="Real-Time Weather Monitoring System" source="x_2132473_real_t_0">cac9d7b883c09310ecf6f0d6feaad3b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Real-Time Weather Monitoring System">cac9d7b883c09310ecf6f0d6feaad3b6</sys_scope>
+        <sys_update_name>sys_ui_policy_action_d5f38959830c1710ecf6f0d6feaad32e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-19 11:34:26</sys_updated_on>
+        <table>x_2132473_real_t_0_weather_data</table>
+        <ui_policy display_value="Weather API Fields Read Only">3d83cd15834c1710ecf6f0d6feaad377</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=d5f38959830c1710ecf6f0d6feaad32e"/>
+</record_update>

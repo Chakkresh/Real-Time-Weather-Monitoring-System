@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2132473_real_t_0.WeatherService</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Retrieves city details and current temperature using Open-Meteo REST APIs and stores the results in Weather Data.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>WeatherService</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[
+var WeatherService = Class.create();
+
+WeatherService.prototype = {
+    initialize: function() {},
+
+    getWeather: function(city) {
+        try {
+            // Step 1: Validate the city name
+            city = (city || '').trim();
+
+            if (!city) {
+                return {
+                    success: false,
+                    message: 'Please enter a city name.'
+                };
+            }
+
+            // Step 2: Search for the city
+            var geoRequest = new sn_ws.RESTMessageV2(
+                'Weather Geocoding API',
+                'Search City'
+            );
+
+            geoRequest.setStringParameterNoEscape(
+                'city',
+                city
+            );
+
+            var geoResponse = geoRequest.execute();
+            var geoStatus = geoResponse.getStatusCode();
+            var geoBody = geoResponse.getBody();
+
+            if (geoStatus != 200) {
+                return {
+                    success: false,
+                    message: 'Geocoding API failed. HTTP status: ' +
+                        geoStatus
+                };
+            }
+
+            var geoData = JSON.parse(geoBody);
+
+            // Step 3: Handle an invalid city
+            if (!geoData.results ||
+                geoData.results.length === 0) {
+                return {
+                    success: false,
+                    message: 'City not found: ' + city
+                };
+            }
+
+            var place = geoData.results[0];
+
+            var latitude = place.latitude;
+            var longitude = place.longitude;
+            var region = place.admin1 || '';
+
+            // Step 4: Retrieve current weather
+            var weatherRequest = new sn_ws.RESTMessageV2(
+                'Weather Current API',
+                'Get Current Weather'
+            );
+
+            weatherRequest.setStringParameterNoEscape(
+                'latitude',
+                String(latitude)
+            );
+
+            weatherRequest.setStringParameterNoEscape(
+                'longitude',
+                String(longitude)
+            );
+
+            var weatherResponse = weatherRequest.execute();
+            var weatherStatus = weatherResponse.getStatusCode();
+            var weatherBody = weatherResponse.getBody();
+
+            if (weatherStatus != 200) {
+                return {
+                    success: false,
+                    message: 'Weather API failed. HTTP status: ' +
+                        weatherStatus
+                };
+            }
+
+            var weatherData = JSON.parse(weatherBody);
+
+            if (!weatherData.current ||
+                weatherData.current.temperature_2m === undefined) {
+                return {
+                    success: false,
+                    message: 'Temperature was not returned by the API.'
+                };
+            }
+
+            var temperature =
+                weatherData.current.temperature_2m;
+
+            // Step 5: Return weather data WITHOUT saving a record
+            return {
+                success: true,
+                message: 'Weather retrieved successfully.',
+                location: place.name,
+                latitude: latitude,
+                region: region,
+                longitude: longitude,
+                temperature: temperature
+            };
+
+        } catch (error) {
+            gs.error(
+                'WeatherService error: ' + error.message
+            );
+
+            return {
+                success: false,
+                message: 'An error occurred while retrieving weather.'
+            };
+        }
+    },
+
+    type: 'WeatherService'
+};
+
+           
+    ]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-18 11:25:34</sys_created_on>
+        <sys_id>6e683b3483c49310ecf6f0d6feaad3e2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>WeatherService</sys_name>
+        <sys_package display_value="Real-Time Weather Monitoring System" source="x_2132473_real_t_0">cac9d7b883c09310ecf6f0d6feaad3b6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Real-Time Weather Monitoring System">cac9d7b883c09310ecf6f0d6feaad3b6</sys_scope>
+        <sys_update_name>sys_script_include_6e683b3483c49310ecf6f0d6feaad3e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-19 11:05:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

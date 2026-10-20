@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>declarative_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>Find Weather</name>
+        <specificity>10</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-19 10:17:45</sys_created_on>
+        <sys_id>2ec2309583c81710ecf6f0d6feaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Find Weather</sys_name>
+        <sys_package display_value="Real-Time Weather Monitoring System" source="x_2132473_real_t_0">cac9d7b883c09310ecf6f0d6feaad3b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Real-Time Weather Monitoring System">cac9d7b883c09310ecf6f0d6feaad3b6</sys_scope>
+        <sys_update_name>sys_ux_form_action_2ec2309583c81710ecf6f0d6feaad349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-19 10:17:45</sys_updated_on>
+        <table>x_2132473_real_t_0_weather_data</table>
+        <ui_action/>
+    </sys_ux_form_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=2ec2309583c81710ecf6f0d6feaad349"/>
+</record_update>
