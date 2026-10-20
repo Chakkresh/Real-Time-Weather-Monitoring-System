@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Search City</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Weather Geocoding API [ Search City ]</qualified_name>
+        <rest_endpoint>https://geocoding-api.open-meteo.com/v1/search</rest_endpoint>
+        <rest_message display_value="Weather Geocoding API">27a3af7c83049310ecf6f0d6feaad3fa</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-18 09:56:35</sys_created_on>
+        <sys_id>2e54a3fc83049310ecf6f0d6feaad36e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Search City</sys_name>
+        <sys_package display_value="Real-Time Weather Monitoring System" source="x_2132473_real_t_0">cac9d7b883c09310ecf6f0d6feaad3b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Real-Time Weather Monitoring System">cac9d7b883c09310ecf6f0d6feaad3b6</sys_scope>
+        <sys_update_name>sys_rest_message_fn_2e54a3fc83049310ecf6f0d6feaad36e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-18 10:57:00</sys_updated_on>
+        <use_auth_mid_server/>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="Weather Monitoring Dashboard">8cfea56983cc9710ecf6f0d6feaad3ff</dashboard>
+        <experience display_value="Platform Analytics">08c73d60537101100834ddeeff7b1287</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-20 09:19:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0cfee56983cc9710ecf6f0d6feaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Real-Time Weather Monitoring System" source="x_2132473_real_t_0">cac9d7b883c09310ecf6f0d6feaad3b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Real-Time Weather Monitoring System">cac9d7b883c09310ecf6f0d6feaad3b6</sys_scope>
+        <sys_update_name>par_dashboard_visibility_0cfee56983cc9710ecf6f0d6feaad368</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-20 09:19:02</sys_updated_on>
+    </par_dashboard_visibility>
+</record_update>
